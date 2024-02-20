@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #a8a8a8;
+}
+
+.bg-cover {
+    background-size: cover !important;
+}
+
+.navbar-custom {
+    background-color: black;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 10px;
+}

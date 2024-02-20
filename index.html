@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Hair Salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-WGB5z2//H5R8q+lCN1AewpBhxmSkG3/A2WwZZwwu9b3FOKOpfqlbl9gT5Q1hMJ2HxH7dRgHlzsIogkRSLZGyyA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Best Hair Salon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#stylists"><i class="fas fa-users"></i> Stylists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services"><i class="fas fa-cut"></i> Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#booking"><i class="fas fa-calendar-alt"></i> Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="jumbotron jumbotron-fluid bg-secondary" style="background-image: url('images/kitten-bg.jpg');">
+    <div class="container text-white">
+        <h1 class="display-4" id="about">Best Hair Salon</h1>
+        <p class="lead">Your one-stop salon for all your haircut needs.</p>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <h2>About Us</h2>
+            <p>At Best Hair Salon, we believe everyone deserves to look and feel their best. With over 20 years of experience, our dedicated team offers a variety of hair services tailored to meet your unique needs.</p>
+        </div>
+        <div class="col-lg-4">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container py-4 bg-secondary text-white" id="stylists">
+    <h2 class="title">Meet Our Stylists!</h2>
+    <div class="card-columns">
+        <div class="card bg-dark"> <!--https://www.pexels.com/photo/men-working-331989/-->
+            <img class="card-img-top" src="images/Bob.jpg" alt="Bob" style="width: 100%;">
+            <div class="card-body">
+                <h4 class="card-title">Bob</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Master Stylist/Co-Founder</h6>
+                <p class="card-text">Bob is our most experienced hairdresser, with over 10 years in the industry. He'll make sure you have a relaxing time and come out looking fresh. </p>
+                <a href="#booking" class="btn btn-light">Book Now!</a>
+            </div>
+        </div>
+        <div class="card bg-dark"> <!--https://www.pexels.com/photo/woman-getting-her-hair-color-3993324/-->
+            <img class="card-img-top" src="images/Susan.jpg" alt="Susan" style="width: 100%;">
+            <div class="card-body">
+                <h4 class="card-title">Susan</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Senior Stylist/Co-Founder</h6>
+                <p class="card-text">Susan will make sure that you get the cut you need for the occassion. With a variety of expertises, she can transform your hair into styles you wouldn't believe!</p>
+                <a href="#booking" class="btn btn-light">Book Now!</a>
+            </div>
+        </div>
+        <div class="card bg-dark"> <!--https://www.pexels.com/photo/a-woman-holding-thin-comb-and-hair-clip-leaning-by-the-chair-while-looking-at-the-camera-8834023/-->
+            <img class="card-img-top" src="images/Julie.jpg" alt="Julie" style="width: 100%;">
+            <div class="card-body">
+                <h4 class="card-title">Julie</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Apprentice</h6>
+                <p class="card-text">Julie's journey as a hairstylist is just beginning. Her passion and dedication to the craft will be sure to make its way straight (or curly) to your heads.</p>
+                <a href="#booking" class="btn btn-light">Book Now!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5" id="services">
+    <h2 class="title">Our Services</h2>
+    <a href="#cuts" class="btn btn-secondary btn-block" data-toggle="collapse">Hair Cuts</a>
+    <div id="cuts" class="collapse">
+        <div class="card-columns" style="color: white;">
+            <div class="card bg-secondary" style="text-align: center;"> <!--https://unsplash.com/photos/woman-sitting-on-chair-with-her-hand-on-chin-JtkJzFrSkdY-->
+                <img class="card-img-top" src="images/Short.jpg" alt="Short Haircut" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title" style="font-weight: bold;">Short Cut</h4>
+                    <p class="card-text">Back to basics with a short cut and some minimal styling.</p>
+                    <p class="card-text">Starting price of $12</p>
+                    <a href="#booking" class="btn btn-light">Book Now!</a>
+                </div>
+            </div>
+            <div class="card bg-secondary" style="text-align: center;"> <!--https://unsplash.com/photos/woman-sitting-on-chair-with-her-hand-on-chin-JtkJzFrSkdY-->
+                <img class="card-img-top" src="images/Medium.jpg" alt="Medium Haircut" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title" style="font-weight: bold;">Medium Cut</h4>
+                    <p class="card-text">Perfect for keeping that hair length short but not too short.</p>
+                    <p class="card-text">Starting price of $20</p>
+                    <a href="#booking" class="btn btn-light">Book Now!</a>
+                </div>
+            </div>
+            <div class="card bg-secondary" style="text-align: center;"> <!--https://unsplash.com/photos/man-in-gray-crew-neck-shirt-f5xiGmFwXIU-->
+                <img class="card-img-top" src="images/Bald.jpg" alt="Bald Haircut" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title" style="font-weight: bold;">Bald Cut</h4>
+                    <p class="card-text">You want it gone? We can help with that. Feel the breeze on your scalp after this cut.</p>
+                    <p class="card-text">Flat price of $7</p>
+                    <a href="#booking" class="btn btn-light">Book Now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#styling" class="btn btn-secondary btn-block" data-toggle="collapse">Hair Styling</a>
+    <div id="styling" class="collapse">
+        <div class="card-columns" style="color: white;">
+            <div class="card bg-secondary" style="text-align: center;"> <!--https://unsplash.com/photos/person-with-grey-and-black-hair-KBoUUqE97r8-->
+                <img class="card-img-top" src="images/Curly.jpg" alt="Curly Hair" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title" style="font-weight: bold;">Curls</h4>
+                    <p class="card-text">Add some volume to your head and some curls on your hair.</p>
+                    <p class="card-text">Starting price of $50</p>
+                    <a href="#booking" class="btn btn-light">Book Now!</a>
+                </div>
+            </div>
+            <div class="card bg-secondary" style="text-align: center;"> <!--https://unsplash.com/photos/womens-purple-hair-PD2RYMtsGhc-->
+                <img class="card-img-top" src="images/Dyed.jpg" alt="Hair Dye" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title" style="font-weight: bold;">Hair Dye</h4>
+                    <p class="card-text">Put a little more colour in your life with a new look.</p>
+                    <p class="card-text">Starting price of $70</p>
+                    <a href="#booking" class="btn btn-light">Book Now!</a>
+                </div>
+            </div>
+            <div class="card bg-secondary" style="text-align: center;"> <!--https://unsplash.com/photos/woman-in-gray-sweater-holding-white-clothes-hanger-WDmvpGs2060-->
+                <img class="card-img-top" src="images/Treatment.jpg" alt="Hair Treatment" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title" style="font-weight: bold;">Hair Treatment</h4>
+                    <p class="card-text">Keep your hair healthy with our hair treatment using natural products.</p>
+                    <p class="card-text">Starting price of $60</p>
+                    <a href="#booking" class="btn btn-light">Book Now!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container bg-secondary" id="booking">
+    <h1 style="text-align: center; color: white;">Make Your Booking Today</h1>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+            </div>
+            <div id="collapseService" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Please select the service you wish to receive</p>
+                    <select id="service">
+                        <option value="ShortChoice">Short Cut [Starting from $12] </option>
+                        <option value="MediumChoice">Medium Cut [Starting from $20]</option>
+                        <option value="BaldChoice">Bald Cut [$7]</option>
+                        <option value="CurlChoice">Hair Curling [Starting from $50] </option>
+                        <option value="DyeChoice">Hair Dye [Starting from $70]</option>
+                        <option value="TreatmentChoice">Hair Treatment [Starting from $60]]</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseStylist">Choose a stylist</a>
+            </div>
+            <div id="collapseStylist" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Please select your preferred stylist</p>
+                    <select id="stylist">
+                        <option value="Bob">Bob</option>
+                        <option value="Susan">Susan</option>
+                        <option value="Julie">Julie</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+            </div>
+            <div id="collapseDate" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Please select your preferred date and time</p>
+                    <div class="form-group">
+                        <label for="date">Select a Date:</label>
+                        <input type="date" id="date" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Select a Time:</label>
+                        <select id="time" class="form-control">
+                            <!-- Options for appointment times will be populated dynamically based on the selected date -->
+                            <option value="">Select a time</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+            </div>
+            <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Your information so we can contact you</p>
+                    <p>First Name: <input type="text" name="firstname"></p>
+                    <p>Last Name: <input type="text" name="lastname"></p>
+                    <p>Email Address: <input type="email" name="email"></p>
+                    <p>Phone Number: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></p>
+                    <!-- Payment Section -->
+                    <p>Credit Card Details:</p>
+                    <div class="form-group row">
+                        <label for="creditCardNumber" class="col-2 col-form-label">Card Number:</label>
+                        <div class="col-10">
+                            <input type="text" class="form-control" id="creditCardNumber" maxlength="4" placeholder="0000"> -
+                            <input type="text" class="form-control" id="creditCardNumber" maxlength="4" placeholder="0000"> -
+                            <input type="text" class="form-control" id="creditCardNumber" maxlength="4" placeholder="0000"> -
+                            <input type="text" class="form-control" id="creditCardNumber" maxlength="4" placeholder="0000">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="expirationDate" class="col-2 col-form-label">Expiration Date:</label>
+                        <div class="col-5">
+                            <input type="text" class="form-control" id="expirationMonth" maxlength="2" placeholder="MM"> /
+                            <input type="text" class="form-control" id="expirationYear" maxlength="2" placeholder="YY">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="cvv" class="col-2 col-form-label">CVV:</label>
+                        <div class="col-2">
+                            <input type="text" class="form-control" id="cvv" maxlength="3" placeholder="123">
+                        </div>
+                    </div>
+                    <!-- End of Payment Section -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="submitButton" type="button" class="block" style="font-weight: bold;">
+        Place your Booking
+    </button>
+</div>
+
+
+
+<footer class="py-3 bg-dark" style="color: white; text-align: center;">
+    <div class="container">
+        <h4>Hours</h4>
+        <p>Monday: Closed<br>Tuesday: Closed<br>Wednesday: 10:00am - 4:00pm<br>Thursday: 10:00am - 4:00pm<br>Friday: 10:00am - 6:00pm<br>Saturday: 12:00pm - 8:00pm<br>Sunday: Closed</p>
+    </div>
+    <div class="container">
+        <h4>Contact Us</h4>
+        <a href="mailto:besthairsalon123456@hairmail.com">Email: besthairsalon123456@hairmail.com</a><br>
+        <a href="tel:1234561234">Tel: 123-456-1234</a>
+    </div>
+    <div class="container py-4">
+        <p class="m-0 text-center text-white">Copyright &copy; Best Hair Salon 2024</p>
+        <p class="m-0 text-center text-muted">Website created by Odilon Assih, Arthur Trakulkajornsak, and Isam Karroum for SEG3125</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jarallax@1.11.0/dist/jarallax.min.js"></script>
+<script>
+    jarallax(document.querySelectorAll('.jarallax'), {
+        speed: 0.2
+    });
+</script>
+
+</body>
+</html>
